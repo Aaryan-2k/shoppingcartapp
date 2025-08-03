@@ -1,0 +1,102 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+.top{
+  background-color: rgb(15, 23, 42);
+
+}
+.navbar{
+  height:5rem;
+  max-width: 72rem;
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+.navbar img{
+  height:100%;
+}
+button{
+  width:100px;
+  background-color: rgba(0,0,0,0);
+  font-size: large;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+.home-cart{
+  display:flex;
+  align-items: center;
+  color:white;
+  justify-content: baseline;
+  font-size: x-large;
+}
+.home-cart a{
+  margin-right: 4rem;
+  color:white;
+  text-decoration: none;
+
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Example: responsive 250px wide cards */
+  gap: 20px; 
+  padding: 20px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Push button to bottom if content varies */
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  /* Other styling for your card appearance */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.product-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-size: 0.9em;
+  color: #666;
+  flex-grow: 1; /* Allow description to take available space */
+}
+
+.product-card .price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.product-card button {
+  margin-top: 15px;
+  /* Button styling */
+}
